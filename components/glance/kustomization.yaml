@@ -1,0 +1,26 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: glance
+
+resources:
+  - namespace.yaml
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+
+labels:
+  - pairs:
+      app.kubernetes.io/name: glance
+      app.kubernetes.io/component: dashboard
+      app.kubernetes.io/managed-by: kustomize
+
+configMapGenerator:
+  - name: glance-config
+    files:
+      - config/glance.yml
+
+# TODO: lets see if renovate catches this
+images:
+  - name: glanceapp/glance
+    newTag: v0.8.5
