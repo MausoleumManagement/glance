@@ -28,6 +28,8 @@ pages:
               - links:
                   - title: Nekropolis K8s Logs
                     url: https://victoria-logs.nekropolis.irminsul/select/vmui/#/?g0.range_input=3h&g0.relative_time=last_3_hours&step=1m&query=error
+                  - title: Nekropolis K8s Hubble
+                    url: https://hubble.nekropolis.irminsul/
           - type: calendar
             first-day-of-week: monday
 

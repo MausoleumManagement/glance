@@ -40,6 +40,8 @@ data:
                   - links:
                       - title: Nekropolis K8s Logs
                         url: https://victoria-logs.nekropolis.irminsul/select/vmui/#/?g0.range_input=3h&g0.relative_time=last_3_hours&step=1m&query=error
+                      - title: Nekropolis K8s Hubble
+                        url: https://hubble.nekropolis.irminsul/
               - type: calendar
                 first-day-of-week: monday
 
@@ -144,7 +146,7 @@ metadata:
     app.kubernetes.io/component: dashboard
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: glance
-  name: glance-config-kh2fkg9758
+  name: glance-config-4fb9b6b5h2
   namespace: glance
 ---
 apiVersion: v1
@@ -231,7 +233,7 @@ spec:
           type: RuntimeDefault
       volumes:
       - configMap:
-          name: glance-config-kh2fkg9758
+          name: glance-config-4fb9b6b5h2
         name: config
       - emptyDir: {}
         name: tmp
