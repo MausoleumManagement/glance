@@ -38,15 +38,15 @@ pages:
             collapse-after: 3
             cache: 12h
             feeds:
+              - url: https://deaddy.net/rss.xml
               - url: https://selfh.st/rss/
                 title: selfh.st
                 limit: 4
-              - url: https://ciechanow.ski/atom.xml
+              # webdev dude writing webdev things
               - url: https://www.joshwcomeau.com/rss.xml
                 title: Josh Comeau
+              # neat illustrative algorithm blog
               - url: https://samwho.dev/rss.xml
-              - url: https://ishadeed.com/feed.xml
-                title: Ahmad Shadeed
 
           #- type: twitch-channels
           #  channels:
