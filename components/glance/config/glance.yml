@@ -39,6 +39,7 @@ pages:
             cache: 12h
             feeds:
               - url: https://deaddy.net/rss.xml
+              - url: https://simonwillison.net/atom/everything/
               - url: https://selfh.st/rss/
                 title: selfh.st
                 limit: 4

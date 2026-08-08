@@ -50,15 +50,16 @@ data:
                 collapse-after: 3
                 cache: 12h
                 feeds:
+                  - url: https://deaddy.net/rss.xml
+                  - url: https://simonwillison.net/atom/everything/
                   - url: https://selfh.st/rss/
                     title: selfh.st
                     limit: 4
-                  - url: https://ciechanow.ski/atom.xml
+                  # webdev dude writing webdev things
                   - url: https://www.joshwcomeau.com/rss.xml
                     title: Josh Comeau
+                  # neat illustrative algorithm blog
                   - url: https://samwho.dev/rss.xml
-                  - url: https://ishadeed.com/feed.xml
-                    title: Ahmad Shadeed
 
               #- type: twitch-channels
               #  channels:
@@ -146,7 +147,7 @@ metadata:
     app.kubernetes.io/component: dashboard
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: glance
-  name: glance-config-4fb9b6b5h2
+  name: glance-config-tfd95gcf85
   namespace: glance
 ---
 apiVersion: v1
@@ -233,7 +234,7 @@ spec:
           type: RuntimeDefault
       volumes:
       - configMap:
-          name: glance-config-4fb9b6b5h2
+          name: glance-config-tfd95gcf85
         name: config
       - emptyDir: {}
         name: tmp
