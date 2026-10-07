@@ -23,4 +23,4 @@ configMapGenerator:
 # TODO: lets see if renovate catches this
 images:
   - name: glanceapp/glance
-    newTag: v0.8.5
+    newTag: v0.8.5@sha256:32ab73d80f2b8b5fb0735b0431deb36b93fbb6b2fb43592449b0178c8b83e350
